@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report an Issue — Bespoke Bristol Property Management &amp; Maintenance</title>
+  <meta name="description" content="Tenants: report a maintenance issue or fault with your property. Tell us how urgent it is and we'll triage it and arrange a fix." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/favicon.svg" class="brand-mark" alt="Bespoke Bristol logo" />
+        <span class="brand-name">Bespoke Bristol</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="report-issue.html" class="active">Report an Issue</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Get a Free Valuation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:20px;">
+      <div class="container">
+        <span class="pill">Tenants · Report an Issue</span>
+        <h1>Something not working? Let us know.</h1>
+        <p class="sub">Tell us what's wrong, how urgent it is, and when we can get access. We triage every report and get it to a vetted tradesperson as quickly as the urgency needs.</p>
+      </div>
+    </section>
+
+    <!-- Emergency callout -->
+    <section class="section" style="padding-top:0; padding-bottom:20px;">
+      <div class="container">
+        <div class="alert-banner">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </span>
+          <div>
+            <h3>Is this a genuine emergency?</h3>
+            <p>If there's an immediate risk to safety or the property — a strong gas smell, uncontrolled flooding, no working smoke alarm, or no heating in freezing weather — <a href="tel:01171234567">call us now on 0117 123 4567</a> rather than filling in the form below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Urgency guide -->
+    <section class="section" style="padding-top:10px;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Before You Report</span>
+          <h2>How urgent is it?</h2>
+          <p>Pick the closest match on the form — it helps us prioritise correctly and get the right tradesperson to you.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="urgency-card emergency">
+            <span class="urgency-tag">Emergency</span>
+            <h3>Immediate risk</h3>
+            <p>A risk to safety, health, or serious damage to the property. Call us directly — don't wait for a form response.</p>
+            <p class="examples">e.g. gas smell, uncontrolled leak or flooding, no heating in freezing weather, no working smoke/CO alarm, break-in or security fault.</p>
+          </div>
+          <div class="urgency-card urgent">
+            <span class="urgency-tag">Urgent</span>
+            <h3>Within 24–48 hours</h3>
+            <p>Affects daily life but isn't dangerous. We'll triage same day and get a tradesperson booked in quickly.</p>
+            <p class="examples">e.g. boiler or hot water fault, leaking pipe, broken external door lock, major appliance failure.</p>
+          </div>
+          <div class="urgency-card routine">
+            <span class="urgency-tag">Routine</span>
+            <h3>Can wait</h3>
+            <p>Non-urgent and doesn't affect health, safety or security. We'll schedule it at the next convenient visit.</p>
+            <p class="examples">e.g. dripping tap, sticking door, minor cosmetic damage, squeaky floorboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="card card-pad" style="max-width:680px; margin:0 auto;">
+          <h2 style="margin-bottom:6px;">Report the issue</h2>
+          <p class="muted" style="font-size:14.5px; margin-bottom:24px;">We aim to acknowledge every report within one working day, sooner for anything urgent.</p>
+          <form class="contact-form" data-ajax-form data-success-message="Thanks — your report has been logged. We'll be in touch shortly, sooner if it's urgent.">
+            <div class="grid grid-2">
+              <div class="form-field">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-field">
+                <label for="address">Property address</label>
+                <input type="text" id="address" name="address" required />
+              </div>
+            </div>
+            <div class="grid grid-2">
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+            <div class="grid grid-2">
+              <div class="form-field">
+                <label for="category">What kind of issue is it?</label>
+                <select id="category" name="category">
+                  <option>Heating &amp; hot water</option>
+                  <option>Plumbing &amp; leaks</option>
+                  <option>Electrical</option>
+                  <option>Appliances</option>
+                  <option>Doors, windows &amp; locks</option>
+                  <option>Damp, mould &amp; structural</option>
+                  <option>Pest control</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="urgency">How urgent is it?</label>
+                <select id="urgency" name="urgency">
+                  <option>Routine — can wait</option>
+                  <option>Urgent — within 24–48 hours</option>
+                  <option>Emergency — immediate risk</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="description">Describe the issue</label>
+              <textarea id="description" name="description" placeholder="What's wrong, where in the property, and when it started" required></textarea>
+            </div>
+            <div class="form-field">
+              <label for="access">Access notes</label>
+              <textarea id="access" name="access" placeholder="Best times for a contractor to attend, pets, entry codes, anything else useful"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Report</button>
+            <p class="form-status muted" style="display:none; margin-top:14px; font-size:14px;"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand" href="index.html">
+          <img src="assets/favicon.svg" class="brand-mark" alt="Bespoke Bristol logo" />
+          <span class="brand-name">Bespoke Bristol</span>
+        </a>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="report-issue.html">Report an Issue</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-disclaimer">
+        Bespoke Bristol Property Management &amp; Maintenance. Residential lettings, property management and maintenance coordination serving Bristol and the surrounding area. &copy; 2026 Bespoke Bristol.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -8,16 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  var form = document.querySelector('.contact-form');
-  if (form) {
+  document.querySelectorAll('form[data-ajax-form]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var status = form.querySelector('.form-status');
       if (status) {
-        status.textContent = 'Thanks — your enquiry has been noted. We aim to respond within one working day.';
+        status.textContent = form.getAttribute('data-success-message') || 'Thanks — this has been noted.';
         status.style.display = 'block';
       }
       form.reset();
     });
-  }
+  });
 });

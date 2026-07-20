@@ -215,6 +215,47 @@ p { margin: 0; }
 .tier-list li { display: flex; gap: 10px; font-size: 14.5px; color: var(--charcoal); }
 .tier-list li svg { flex-shrink: 0; margin-top: 2px; color: var(--green); }
 
+/* ---------- Alert banner (emergency callout) ---------- */
+.alert-banner {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #fdeceb;
+  border: 1px solid #f0bab1;
+  color: #7a2a20;
+  border-radius: var(--radius);
+  padding: 20px 24px;
+}
+.alert-banner .icon {
+  width: 38px; height: 38px; border-radius: 50%;
+  background: #f7d3cd; color: #b5382a;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.alert-banner h3 { font-family: var(--font); font-size: 16px; font-weight: 700; color: #7a2a20; }
+.alert-banner p { margin-top: 6px; font-size: 14.5px; color: #8a3c30; }
+.alert-banner a { font-weight: 700; text-decoration: underline; }
+
+/* ---------- Urgency cards ---------- */
+.urgency-card {
+  border-radius: var(--radius);
+  padding: 26px 24px;
+  border: 1.5px solid var(--line);
+  background: var(--white);
+}
+.urgency-card.emergency { border-color: #e8a79c; background: #fdf3f1; }
+.urgency-card.urgent { border-color: var(--gold); background: var(--gold-soft); }
+.urgency-card.routine { border-color: var(--line-strong); background: var(--green-soft); }
+.urgency-tag {
+  display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.04em;
+  text-transform: uppercase; padding: 4px 12px; border-radius: var(--pill); margin-bottom: 14px;
+}
+.urgency-card.emergency .urgency-tag { background: #b5382a; color: #fff; }
+.urgency-card.urgent .urgency-tag { background: var(--gold); color: #fff; }
+.urgency-card.routine .urgency-tag { background: var(--green); color: #fff; }
+.urgency-card h3 { font-size: 17px; }
+.urgency-card p { margin-top: 10px; font-size: 14px; color: var(--charcoal); }
+.urgency-card .examples { margin-top: 12px; font-size: 13px; color: var(--slate); }
+
 /* ---------- Trust strip ---------- */
 .trust-strip {
   display: flex; flex-wrap: wrap; gap: 14px;
